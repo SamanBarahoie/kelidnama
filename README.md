@@ -56,24 +56,24 @@ pip install -e .
 ## 🚀 شروع به کار
 
 ```
-kelidnama scan --path مسیر/پروژه
+kelidnama  --path 
 ```
 
 ### ✨ چند نمونه استفاده کاربردی:
 
 - اسکن یک مسیر:
   ```
-  kelidnama scan --path src/
+  kelidnama  --path src/
   ```
 
 - اسکن چند پوشه به‌صورت هم‌زمان:
   ```
-  kelidnama scan --path frontend --path backend
+  kelidnama --path test_project --path other_project
   ```
 
 - فیلتر بر اساس نوع اطلاعات (مثلاً فقط "token"):
   ```
-  kelidnama scan --path . --filter token
+  kelidnama --path test_project --filter-type token 
   ```
 
 ---
