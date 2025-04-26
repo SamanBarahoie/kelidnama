@@ -1,0 +1,13 @@
+sensitive_keywords:
+  - AWS
+  - password
+  - token
+  - secret
+  - Telegram Bot Token
+  - Discord Bot Token
+  - JSON Web Token (JWT)
+ignored_extensions:
+  - .png
+  - .jpg
+  - .exe
+

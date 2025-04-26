@@ -1,0 +1,31 @@
+[project]
+name = "kelidnama"
+version = "0.1.0"
+description = "🛡️ ابزار خط فرمان فارسی برای شناسایی کلیدها و اطلاعات حساس در پروژه‌ها"
+authors = [
+    { name = "saman barahoie" }
+]
+readme = "README.fa.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "pathspec>=0.12.1",
+    "PyYAML>=6.0",
+    "matplotlib>=3.5.0",
+    "toml>=0.10.2",
+]
+
+[project.scripts]
+kelidnama = "kelidnama.cli:app"
+
+[tool.setuptools]
+packages = ["kelidnama"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests"
+]
