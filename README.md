@@ -49,6 +49,8 @@
 
 ```bash
 git clone https://github.com/your-username/kelidnama.git
+```
+```bash
 cd kelidnama
 pip install -e .
 ```
@@ -105,7 +107,7 @@ kelidnama --path test_project --filter-type token
 
 با ساختن فایل `config.yaml` می‌تونی تعریف کنی دنبال چه کلمات کلیدی بگرده یا چه پسوند فایل‌هایی رو نادیده بگیره:
 
-```bash
+```yaml
 sensitive_keywords:
   - AWS
   - password
