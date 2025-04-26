@@ -46,7 +46,9 @@
 
 ```bash
 git clone https://github.com/your-username/kelidnama.git
+
 cd kelidnama
+
 pip install -e .
 ```
 
@@ -59,7 +61,7 @@ pip install -e .
 <div dir="ltr">
 
 ```bash
-kelidnama scan --path مسیر/پروژه
+kelidnama  --path مسیر/پروژه
 ```
 
 </div>
@@ -71,7 +73,7 @@ kelidnama scan --path مسیر/پروژه
 <div dir="ltr">
 
 ```bash
-kelidnama scan --path src/
+kelidnama  --path src/
 ```
 
 </div>
@@ -81,7 +83,7 @@ kelidnama scan --path src/
 <div dir="ltr">
 
 ```bash
-kelidnama scan --path frontend --path backend
+ kelidnama --path test_project --path other_project
 ```
 
 </div>
@@ -91,7 +93,7 @@ kelidnama scan --path frontend --path backend
 <div dir="ltr">
 
 ```bash
-kelidnama scan --path . --filter-type token
+kelidnama --path test_project --filter-type token 
 ```
 
 </div>
