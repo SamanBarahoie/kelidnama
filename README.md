@@ -105,7 +105,7 @@ kelidnama --path test_project --filter-type token
 
 با ساختن فایل `config.yaml` می‌تونی تعریف کنی دنبال چه کلمات کلیدی بگرده یا چه پسوند فایل‌هایی رو نادیده بگیره:
 
-```yaml
+```bash
 sensitive_keywords:
   - AWS
   - password
