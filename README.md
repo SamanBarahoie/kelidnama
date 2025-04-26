@@ -1,6 +1,4 @@
 
----
-
 <div dir="rtl" align="right">
 
 # 🚨 کلیدنما | KelidNama
@@ -44,42 +42,67 @@
 
 ## 🔧 نصب سریع
 
+<div dir="ltr">
+
 ```bash
 git clone https://github.com/your-username/kelidnama.git
 cd kelidnama
 pip install -e .
 ```
 
+</div>
+
 ---
 
 ## 🚀 شروع به کار
+
+<div dir="ltr">
 
 ```bash
 kelidnama scan --path مسیر/پروژه
 ```
 
+</div>
+
 ### ✨ چند نمونه استفاده کاربردی:
 
 - اسکن یک مسیر خاص:
-  ```bash
-  kelidnama scan --path src/
-  ```
+
+<div dir="ltr">
+
+```bash
+kelidnama scan --path src/
+```
+
+</div>
 
 - اسکن چند پوشه به‌طور هم‌زمان:
-  ```bash
-  kelidnama scan --path frontend --path backend
-  ```
+
+<div dir="ltr">
+
+```bash
+kelidnama scan --path frontend --path backend
+```
+
+</div>
 
 - فیلتر کردن نتایج بر اساس نوع اطلاعات (مثلاً فقط "token"):
-  ```bash
-  kelidnama scan --path . --filter-type token
-  ```
+
+<div dir="ltr">
+
+```bash
+kelidnama scan --path . --filter-type token
+```
+
+</div>
 
 ---
 
 ## ⚙️ شخصی‌سازی اسکن با `config.yaml`
 
 با ساختن فایل `config.yaml` می‌تونی تعریف کنی دنبال چه کلمات کلیدی بگرده یا چه پسوند فایل‌هایی رو نادیده بگیره:
+
+<div dir="ltr">
 
 ```yaml
 sensitive_keywords:
@@ -97,16 +120,18 @@ ignored_extensions:
   - .exe
 ```
 
+</div>
+
 ---
 
 ## 🧠 شناسایی الگوهای حساس رایج
 
 KelidNama می‌تونه اطلاعات حساس زیر رو پیدا کنه:
 
-- کلیدهای API سرویس‌های AWS، Google، Firebase، SendGrid، Stripe، Mailchimp
-- توکن‌های Discord، Telegram، Slack
-- Webhookهای Slack و Microsoft Teams
-- توکن‌های JWT، OAuth و پسوردهای سخت‌کد شده داخل کد
+- کلیدهای API سرویس‌های AWS، Google، Firebase، SendGrid، Stripe، Mailchimp  
+- توکن‌های Discord، Telegram، Slack  
+- Webhookهای Slack و Microsoft Teams  
+- توکن‌های JWT، OAuth و پسوردهای سخت‌کد شده داخل کد  
 - و کلی اطلاعات دیگه که **نباید هیچ وقت توی مخزن کدت باشن!**
 
 ---
